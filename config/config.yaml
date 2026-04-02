@@ -1,0 +1,32 @@
+env: dev
+
+log:
+  level: info
+  type: stdout
+  format: console
+
+http_srv:
+  address: :8080
+  read_timeout: 30
+  write_timeout: 30
+
+jenkins:
+  url: https://jenkins.example.com
+  username: admin
+  password: admin-password
+
+gitlab:
+  url: https://gitlab.example.com
+  token: your-token
+
+db:
+  driver: mysql
+  host: localhost
+  port: 3306
+  database: leister
+  username: root
+  password: password
+  max_idle_conns: 10
+  max_open_conns: 20
+  conn_max_lifetime: 300
+  conn_max_idle_time: 60
