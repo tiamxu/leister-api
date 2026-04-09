@@ -1,0 +1,22 @@
+env: dev
+
+log:
+  level: info
+  type: stdout
+  format: console
+
+http_srv:
+  address: :8080
+  read_timeout: 30
+  write_timeout: 30
+
+jenkins:
+  url: https://jenkins-k8s.yeemiao.net.cn/
+  username: xuliang
+  password: c9b,2,u@(]c?&3QmBW
+
+gitlab:
+  url: https://gitlab.example.com
+  token: your-token
+
+db: null

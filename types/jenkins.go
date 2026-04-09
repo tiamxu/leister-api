@@ -11,3 +11,8 @@ type JenkinsJobResponse struct {
 	Status  string `json:"status"`
 	Message string `json:"message"`
 }
+
+type AddJobReq struct {
+	Name  string `json:"name"`
+	Group string `json:"group"`
+}

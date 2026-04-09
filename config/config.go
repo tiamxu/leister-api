@@ -9,7 +9,7 @@ import (
 
 	"github.com/koding/multiconfig"
 	httpkit "github.com/tiamxu/kit/http"
-	"github.com/tiamxu/leister-api/logic/repo"
+	"github.com/tiamxu/leister-api/repo"
 )
 
 var (
@@ -20,12 +20,12 @@ var (
 
 // Config 配置结构体
 type Config struct {
-	ENV      string                  `yaml:"env"`
-	Log      log.Config              `yaml:"log"`
-	HttpSrv  httpkit.GinServerConfig `yaml:"http_srv"`
-	DB       *sql.Config             `yaml:"db"`
-	Jenkins  JenkinsConfig           `yaml:"jenkins"`
-	GitLab   GitLabConfig            `yaml:"gitlab"`
+	ENV     string               `yaml:"env"`
+	Log     log.Config           `yaml:"log"`
+	HttpSrv httpkit.ServerConfig `yaml:"http_srv"`
+	DB      *sql.Config          `yaml:"db"`
+	Jenkins JenkinsConfig        `yaml:"jenkins"`
+	GitLab  GitLabConfig         `yaml:"gitlab"`
 }
 
 // JenkinsConfig Jenkins 配置
